@@ -29,7 +29,7 @@ void printDetails(): Prints all details of the book. The format should be  “ti
 No two books can have the same isbn. If the constraint is violated then the book which is being entered into the system later is removed from the system (i.e. only the first book which was present in the system persists and all the later books are not added to the system).
 A book's copiesAvailable should never exceed totalCopies or fall below zero.
  
-**Member** – Represents a member of the library.
+2. **Member** – Represents a member of the library.
 - **Attributes**:
 memberID (private, string): Unique identifier for the member.
 name (public, string): Name of the member.
@@ -50,7 +50,7 @@ void printDetails(): Prints member details, including a list of borrowed books a
 A member cannot borrow more than their borrowLimit.
 A member can borrow the same book multiple times if additional copies are available.
  
-**Library** – Represents a library
+3. **Library** – Represents a library
 - **Attributes**:
 books (private, vector): A list of books in the library.
 members (private, vector): A list of registered members.
