@@ -6,22 +6,22 @@ This project extends the class hierarchy , managing records for Books, Members o
  
 ## Class Definitions
 1.   **Book** - Represents a book in the library.
- - Attributes:
+ - **Attributes**:
    title (public, string): Title of the book.
    author (public, string): Author of the book.
    isbn (private, string): Unique identifier for the book.
    copiesAvailable (private, int): Number of available copies.
    totalCopies (private, int): Total copies of the book in the library.
 
-Methods:
+- **Methods**:
 Constructors:
-Create a parameterized constructor to initialize all the attributes.
+- Create a parameterized constructor to initialize all the attributes.
 A constructor with default arguments for title, author, isbn, copiesAvailable, totalCopies ("UnknownTitle", "UnknownAuthor", “ISBN”, 0, 5).
 One copy constructor to initialize a book using another book instance. Also pass another argument (a new isbn) to this constructor and assign the isbn of the copied book to this new isbn.
-2.  	Getters and Setters:
+  - Getters and Setters:
 Getters for isbn, copiesAvailable, and totalCopies.
 A setter updateCopies(count): increases or decreases the available and the total count of the book ensuring that neither available count or total count becomes less than zero. If the condition is violated then ignore the request and print the statement “Invalid request! Count becomes negative”.
-3.  	Utility Methods:
+- Utility Methods:
 bool borrowBook(): Decreases copiesAvailable if a copy is available; returns true if successful and false otherwise (print the message “Invalid request! Copy of book not available” for this case).
 bool returnBook(): Increases copiesAvailable up to totalCopies (if the method is called such that the copiesAvailable exceeds totalCopies then the request should be ignored, an error message should be printed stating “Invalid request! Copy of book exceeds total copies” and the copiesAvailable should not be changed ). If return book was successful then return true. Else return false.
 void printDetails(): Prints all details of the book. The format should be  “title author” (the entities are separated by a single space).
