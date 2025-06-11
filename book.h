@@ -25,7 +25,6 @@ class Book{
         string isbn;
         int copiesAvailable;
         int totalCopies;
-
 };
 
 #endif
