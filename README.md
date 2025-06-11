@@ -7,11 +7,11 @@ This project extends the class hierarchy , managing records for Books, Members o
 ## Class Definitions
 1.   **Book** - Represents a book in the library.
  Attributes:
-1.  	title (public, string): Title of the book.
-2.  	author (public, string): Author of the book.
-3.  	isbn (private, string): Unique identifier for the book.
-4.  	copiesAvailable (private, int): Number of available copies.
-5.  	totalCopies (private, int): Total copies of the book in the library.
+   title (public, string): Title of the book.
+   author (public, string): Author of the book.
+   isbn (private, string): Unique identifier for the book.
+   copiesAvailable (private, int): Number of available copies.
+   totalCopies (private, int): Total copies of the book in the library.
 
 Methods:
 1.  	Constructors:
